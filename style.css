@@ -1,0 +1,1372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff !important;
+}
+/* ===================== MENU ===================== */
+
+.navbar {
+    padding: 12px 0;
+    background-color: #1b3870 !important;
+    border-bottom: none !important;
+    transition: all 0.5s ease;
+}
+
+.navbar.secondary {
+    background-color: #1b3870 !important;
+}
+
+/* Make the container use flex so logo goes left */
+.navbar .container,
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* Logo - force to the left */
+.navbar-brand,
+.navbar-header {
+    color: white !important;
+    font-weight: 700;
+    font-size: 26px;
+    margin: 0 !important;
+    padding-left: 20px !important;
+    float: none !important;          /* remove Bootstrap float */
+}
+
+/* Menu items - stay on the right side */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+    float: none !important;
+    margin-left: auto !important;    /* pushes menu to the right */
+}
+
+/* Each menu item - rounded with black stroke */
+.navbar ul li a {
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    font-size: 14px;
+    
+    background-color: transparent !important;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    padding: 7px 16px !important;
+    margin: 0 4px;
+    
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    color: white !important;
+}
+
+/* Mobile toggle */
+.navbar-toggle {
+    border: 1px solid white !important;
+    margin-right: 15px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-inverse .navbar-collapse {
+    border-color: transparent !important;
+}
+
+/* ===================== MENU ENDS ===================== */
+
+/* Mobile toggle */
+.navbar-toggle {
+    border: 1px solid white !important;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-inverse .navbar-collapse {
+    border-color: transparent !important;
+}
+
+/* ===================== MENU ENDS ===================== */
+
+/* Mobile toggle */
+.navbar-toggle {
+    border: 1px solid white !important;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-inverse .navbar-collapse {
+    border-color: transparent !important;
+}
+
+/* ===================== MENU ENDS ===================== */
+
+/* slider starts here*/
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url("../img/purple.jpg");
+    background-size: cover;
+    background-position: center;
+    color:white;
+}
+
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.slider-content {
+    position: absolute;
+    top: 39%;
+    width: 100%;
+}
+.location {
+    border: 1px solid white;
+    border-radius: 40px; 
+}
+
+.icons .fa
+{
+    font-size: 35px;
+    margin-right: 7px;
+}
+
+.cta-div
+{
+    margin-top: 30px;
+    margin-right: -10px;
+}
+
+
+
+.btn1 
+{
+    padding: 13px 18px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    transition: all 0.5s ease-in;
+    margin-right: -6px;
+}
+
+
+
+
+.btn1:hover 
+{
+    text-decoration: none;
+    color: white;
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+}
+
+.btn2 
+{
+    padding: 13px 18px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: 2px solid white;
+    border-bottom-right-radius: 15px;
+    transition: all 0.5s ease-in;
+    margin-right: 10px;
+}
+
+.btn2:hover 
+{
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+
+/* slider ends here */
+
+/*slider 3 starts here*/
+
+.social-icons
+{
+justify-content: center;
+display: flex;
+gap: 15px;
+}
+
+.social-icon
+{
+width: 45px;
+height: 45px;
+border: 2px solid white;
+border-radius: 50px;
+color:white;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+transition: all 0.5s ease;
+font-size: medium;
+position: relative;
+}
+
+.social-icon:hover
+{
+text-decoration: none;
+color: white;
+border-color: deepskyblue;
+background-color: deepskyblue;
+}
+
+.slider .text, .slider .typed-cursor
+{
+  display: inline;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.primary
+{
+  color: orangered;
+}
+
+.typed-cursor
+{
+  opacity: 1;
+  animation: blink 0.7s infinite;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+}
+
+@keyframes blink
+{
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes blink
+{
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes blink
+{
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+select {
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+select:focus{
+    outline: none;
+}
+
+/*====================================
+          Services styles
+====================================*/
+
+.service-area {
+    margin-top: 30px;
+    padding-bottom: 60px;
+    background-color: #ffffff !important;
+}
+
+.service-area p {
+    margin-bottom: -5px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section-title p {
+    color: #777;
+    font-size: 15px;
+}
+
+.service-wrap {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 35px 25px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+    background: #fff;
+    min-height: 240px;
+}
+
+.service-wrap::before,
+.service-wrap::after {
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background: #1b3870;
+}
+
+.service-wrap::before {
+    top: -37px;
+    left: 100%;
+}
+
+.service-wrap:hover::before {
+    left: -27px;
+    opacity: 1;
+}
+
+.service-wrap::after {
+    right: 100%;
+    bottom: -37px;
+}
+
+.service-wrap:hover::after {
+    right: -27px;
+    opacity: 1;
+}
+
+.service-wrap:hover {
+    color: white;
+}
+
+.service-wrap:hover h3 {
+    color: white;
+}
+
+.service-wrap:hover h3:after {
+    background-color: white;
+}
+
+.service-icon i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    color: #34495e;
+}
+
+.service-wrap:hover .service-icon i {
+    transform: rotate(360deg);
+    color: white;
+}
+
+.service-wrap h3 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+    color: #333;
+}
+
+.service-wrap p {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #777;
+    line-height: 1.6;
+}
+
+.service-wrap:hover p {
+    color: white;
+}
+
+/*====================================
+       Services styles Ends
+====================================*/
+/*SLIDER ENDS HERE.
+
+
+/*====================================
+       Works Styles – images stick together, no gaps
+====================================*/
+.work {
+    margin-top: 25px;
+}
+
+/* Match both no-gutter and no-gutters (HTML uses no-gutter) */
+.work .row.no-gutter,
+.work .row.no-gutters {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.work .row.no-gutter > [class*="col-"],
+.work .row.no-gutters > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.img-wrapper {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    line-height: 0; /* removes gap under images */
+}
+
+.img-wrapper img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
+    display: block; /* removes inline-image bottom gap */
+    margin: 0;
+    padding: 0;
+    border: 0;
+   
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+/*====================================
+       Works Styles ends here
+====================================*/
+
+
+/*====================================
+       Team / Members Styles
+====================================*/
+.teams {
+    padding: 60px 0 80px;
+    background: #ffffff;
+}
+
+.teams h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.teams > .container > p,
+.teams .container.text-center p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.team-row {
+    margin-top: 20px;
+}
+
+.team-member {
+    margin: 0 10px 30px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.team-member .team-photo {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    display: block;
+    border-radius: 4px;
+}
+
+.team-member-info {
+    padding: 10px 0 20px 0;
+}
+
+.team-member-name {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-top: 5px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.team-member-designation {
+    color: #00bcd4;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    font-style: normal;
+}
+
+.social-list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.social-list li {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+    margin-top: 5px;
+}
+
+.social-list i {
+    font-size: 16px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.social-list a:hover i {
+    color: #00bcd4;
+}
+
+#accordion .panel
+{
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#accordion .panel-heading
+{
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+}
+
+#accordion .panel-title a
+{
+    display: block;
+    padding: 25px 35px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background: #34495e;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+#accordion .panel-title a:after,
+#accordion .panel-title a.collapsed:after
+{
+    content: "\f068";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    line-height: 32px;
+    border-radius: 50%;
+    background: #34495e;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border: 5px solid white;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    transition: all 0.3s ease 0s;
+}
+
+#accordion .panel-title a.collapsed:after
+{
+    content: "\f067";
+}
+
+#accordion .panel-title a:hover:after,
+#accordion .panel-title a.collapsed:hover:after
+{
+    transform: rotate(360deg);
+}
+
+#accordion .panel-body
+{
+    padding: 15px 25px;
+    background-color: #ebebeb;
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 25px;
+    border-top: none;
+    position: relative;
+}
+
+.panel-heading a
+{
+    text-decoration: none !important;
+    font-size: 15px !important;
+    font-weight: normal;
+}
+
+.freemage img
+{
+    margin-top: -45px;
+}
+
+/*==========================================
+              FAQs style Ends
+==========================================*/
+
+
+/*-------------------------------------*/
+/*         Video Style Starts          */
+/*-------------------------------------*/
+
+.video-area {
+	background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url(../img/guthrie.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+
+	height: 100vh;
+	min-height: 100vh;
+	width: 100%;
+	
+	/* Strong centering */
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: center; /* extra safety */
+}
+
+/* Circular Play Button */
+.play {
+	width: 110px;
+	height: 110px;
+	background: #ffffff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+	margin: 0 auto; /* forces center if parent has text-align */
+	
+	box-shadow: 0 0 0 18px rgba(0, 167, 221, 0.45);
+	
+	transition: all 0.4s ease;
+}
+
+/* Triangle inside */
+.play::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 22px 0 22px 38px;
+	border-color: transparent transparent transparent #00a7dd;
+	margin-left: 8px;
+}
+
+/* Hover */
+.play:hover {
+	box-shadow: 0 0 0 25px rgba(0, 84, 111, 0.55);
+	transform: scale(1.08);
+}
+
+/* Video container */
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+	z-index: 20;
+	background: #000;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+
+
+
+
+/* ==============================
+   Blog Section
+============================== */
+.latest-news-area {
+  margin-top: 100px;
+  padding-bottom: 80px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ==============================
+   Blog Cards
+============================== */
+.latest-news-wrap {
+  background: #fff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.latest-news-wrap:hover {
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Container */
+.news-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.news-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.latest-news-wrap:hover .news-img img {
+  transform: scale(1.05);
+}
+
+/* Dark Overlay */
+.news-img:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.news-img.hovered:before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Date Badge */
+.deat {
+  background: #F80406;
+  height: 70px;
+  width: 70px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  text-align: center;
+  padding: 12px 0;
+  z-index: 2;
+}
+
+.deat span {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Content Area */
+.news-content {
+  padding: 20px;
+}
+
+.news-content i {
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.news-content .fa-facebook  { color: #3b5998; }
+.news-content .fa-twitter   { color: #1da1f2; }
+.news-content .fa-linkedin  { color: #0077b5; }
+.news-content .fa-youtube   { color: #ff0000; }
+.news-content .fa-whatsapp  { color: #25d366; }
+
+.news-content i:hover {
+  transform: scale(1.2);
+}
+
+.news-content p {
+  margin: 18px 0 20px;
+  text-align: justify;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Read More Button (matches video - dark style) */
+.news-content a {
+  display: inline-block;
+  font-size: 13px;
+  background-color: #2c3e50;
+  padding: 10px 22px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+  border: 1px solid #2c3e50;
+}
+
+.news-content a:hover {
+  background-color: transparent;
+  color: #2c3e50;
+  border-top-right-radius: 20px;
+}
+
+/* ==============================
+   Responsive
+============================== */
+@media (max-width: 767px) {
+  .latest-news-area {
+    margin-top: 80px;
+  }
+  .news-img img {
+    height: 200px;
+  }
+}
+
+/*----------------------------
+        Contact area style starts
+------------------------------*/
+.contact-area
+{
+  margin-top: 60px;
+}
+.form-control
+{
+  border-radius: 0px !important;
+  border: 1px solid #343a40 !important;
+}
+.contact-form button.btn
+{
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 12px 45px;
+  border: 1px solid black;
+  border-radius: 0px;
+  transition: all 300ms ease;
+}
+
+/* button sent state */
+.contact-form button.btn.sent
+{
+  background: #27ae60;
+  color: #fff;
+  border-color: #1e8449;
+}
+.contact-form button.btn.sent:after
+{
+  content: "✔";
+  display: inline-block;
+  margin-left: 8px;
+  transform: scale(0.8);
+  animation: pop 400ms ease-out;
+}
+@keyframes pop
+{
+  0%   {transform: scale(0.6); opacity: 0}
+  60%  {transform: scale(1.15); opacity: 1}
+  100% {transform: scale(1);}
+}
+
+/* form alert messages (success / error) */
+.form-alert
+{
+  display: none;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+.form-alert.success
+{
+  background: #eafaf1;
+  color: #196f3d;
+  border: 1px solid #a9dfbf;
+}
+.form-alert.error
+{
+  background: #fdedec;
+  color: #922b21;
+  border: 1px solid #f5b7b1;
+}
+.contact-form button:disabled
+{
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.border-bottom-row
+{
+  width: 60px;
+  height: 2px;
+  background: black;
+  margin: 0 auto;
+}
+
+.contact-infos
+{
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: #343a40;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.contact-infos .fa
+{
+  color: white;
+  font-size: 24px;
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+}
+.contact-infos p
+{
+  color: white;
+  margin-top: 15px;
+}
+
+/* Quick contact button */
+.btn-quickly
+{
+  margin-left: 10px;
+  background: #F1C40F;
+  color: #fff;
+  border-color: #F39F77;
+}
+.btn-quickly:hover
+{
+  background: #F1C40F;
+  color: #fff;
+}
+
+/* Quick contact modal */
+.modal-contact-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:2000;display:none;align-items:center;justify-content:center}
+.modal-contact-wrap{position:relative;background:#fff;padding:30px;left:5%;max-width:700px;margin:auto;border-radius:4px;z-index:2001;box-shadow:0 8px 30px rgba(0,0,0,.3)}
+.modal-contact-wrap .modal-close{position:absolute;top:10px;right:10px;background:none;border:none;font-size:18px;line-height:1;cursor:pointer}
+.modal-open{overflow:hidden}
+.modal-contact-wrap .form-alert{margin-bottom:15px;display:none}
+
+@media(max-width: 768px)
+{
+  .modal-contact-wrap .modal-content{padding:20px}
+}
+
+
+/* Google Map - Full Width & Tall */
+.maps {
+  width: 100%;
+  height: 500px;          /* You can change to 550px or 600px if you want taller */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.maps iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .contact-infos {
+    padding: 30px 10px;
+  }
+  
+  .contact-item {
+    margin-bottom: 25px;
+  }
+  
+  .maps {
+    height: 350px;
+  }
+}
+
+
+/*====================================
+       Testimonials / Reviews Styles
+====================================*/
+.testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/orangepic.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+.testimonials h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.testimonials .border-bottom {
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.testimonials img.img-circle,
+.testimonials .carousel-inner img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 3px solid white;
+    padding: 5px;
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+
+.testimonials .carousel-indicators {
+    bottom: -60px;
+}
+
+.testimonials .carousel-indicators li {
+    border: 1px solid white;
+    background: transparent;
+}
+
+.testimonials .carousel-indicators .active {
+    background: #00a7dd;
+    border-color: #00a7dd;
+}
+
+.testimonials h2,
+.testimonials .item h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.testimonials h4 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.testimonials .carousel-inner p {
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    color: white;
+    line-height: 1.7;
+}
+
+/*====================================
+       Counter / Stats Styles
+====================================*/
+.stat {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/orangepic.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    margin-top: 0;
+}
+
+.stat i {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.stat-items h2 {
+    font-weight: bold;
+    font-size: 42px;
+    color: deepskyblue;
+    margin: 10px 0 5px;
+}
+
+.stat-items h2 .counter,
+.stat-items h2 span {
+    color: deepskyblue;
+}
+
+.stat-items p {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    .stat {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .stat-items {
+        margin-bottom: 30px;
+    }
+    .testimonials {
+        padding-bottom: 100px;
+    }
+}
+
+
+/*====================================
+   Team Owl Carousel – bottom arrows & dots
+   (below profile text, not on the sides)
+====================================*/
+#team-members {
+    position: relative;
+    padding: 0 10px 20px;
+}
+
+/* Bottom nav buttons under profiles */
+#team-members .owl-nav {
+    position: static !important;
+    width: 100%;
+    margin: 18px 0 8px;
+    text-align: center;
+    transform: none !important;
+}
+
+#team-members .owl-nav button.owl-prev,
+#team-members .owl-nav button.owl-next {
+    position: static !important;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background: #1b3870 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    line-height: 42px !important;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    vertical-align: middle;
+}
+
+#team-members .owl-nav button.owl-prev:hover,
+#team-members .owl-nav button.owl-next:hover {
+    background: #00a7dd !important;
+    color: #fff !important;
+}
+
+#team-members .owl-dots {
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+#team-members .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 4px;
+    background: #ccc;
+    display: block;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+#team-members .owl-dot.active span,
+#team-members .owl-dot:hover span {
+    background: #00a7dd;
+}
+
+#team-members .team-member {
+    margin: 0 8px 10px;
+}
+
+#team-members .team-photo {
+    width: 100%;
+    max-width: 260px;
+    height: 260px;
+    object-fit: cover;
+    margin: 0 auto 12px;
+    display: block;
+    border-radius: 4px;
+}
+
+/* Ensure team section is visible and separate from reviews */
+.teams {
+    padding: 60px 0 50px;
+    background: #ffffff;
+    display: block;
+    visibility: visible;
+}
+
+/*====================================
+   Reviews – bottom controls under text
+====================================*/
+/* Hide Bootstrap side controls */
+.testimonials .carousel-control {
+    display: none !important;
+}
+
+/* Custom bottom prev/next under review text */
+.review-nav-bottom {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.review-nav-bottom .btn-review-prev,
+.review-nav-bottom .btn-review-next {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.review-nav-bottom .btn-review-prev:hover,
+.review-nav-bottom .btn-review-next:hover {
+    background: #fff;
+    color: #1b3870;
+    text-decoration: none;
+}
+
+.testimonials .carousel-indicators {
+    position: static !important;
+    width: 100%;
+    margin: 15px auto 0;
+    bottom: auto;
+}
+
+@media (max-width: 767px) {
+    #team-members {
+        padding: 0 5px 15px;
+    }
+    #team-members .team-photo {
+        max-width: 220px;
+        height: 220px;
+    }
+}
+
+/* =====================================================
+   CRITICAL FIX: Owl hides .owl-carousel until JS runs.
+   Force team members visible so section is never blank.
+===================================================== */
+#team-members.owl-carousel {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Fallback grid if Owl JS fails */
+#team-members.team-fallback,
+#team-members.team-fallback.owl-carousel {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+#team-members.team-fallback .team-member {
+    flex: 0 0 280px;
+    max-width: 280px;
+}
+
+/* Team photos – keep height even if image 404 */
+#team-members .team-photo {
+    width: 100%;
+    max-width: 260px;
+    height: 260px;
+    object-fit: cover;
+    margin: 0 auto 12px;
+    display: block;
+    border-radius: 4px;
+    background: #eee;
+}
+
+.teams {
+    min-height: 200px;
+}
